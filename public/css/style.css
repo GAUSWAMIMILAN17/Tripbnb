@@ -1,0 +1,286 @@
+body {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* navbar */
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.size {
+    color: #fe424d;
+    font-size: 2rem !important;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* footer  */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-socials,
+.f-info-links,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info-links {
+    width: 100%;
+}
+
+.f-info-links a {
+    margin-right: 0.2rem;
+}
+
+.f-info {
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+/* calrds */
+.wavy-heading {
+    text-decoration: underline rgb(0, 0, 0, 0.5);
+    text-underline-offset: 9px;
+    margin-bottom: 30px;
+}
+
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 1rem;
+    /* padding: 0 0 !important; */
+    /* margin-left: 1rem; */
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.title {
+    font-size: 1.5rem !important;
+    /* body text जैसा */
+    font-weight: normal;
+}
+
+/* card effect */
+
+.card-img-overlay {
+    opacity: 0;
+    border-radius: 1rem !important;
+    transition: 0.3s ease;
+    /* smooth hover */
+}
+
+.card-img-overlay:hover {
+    padding: 0 !important;
+    margin: 0 !important;
+    opacity: 0.2;
+    background-color: rgb(255, 255, 255);
+    /* या rgba(0,0,0,0.3) readability बढ़ाने के लिए */
+}
+
+.card-title {
+    margin-left: 1rem !important;
+}
+
+/* new pages */
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* show page */
+
+.show-image {
+    height: 30vh;
+}
+
+/* login and signup */
+.heading {
+    font-size: 2rem;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem;
+}
+
+.backto a {
+    text-decoration: none;
+    color: #fe424d;
+}
+
+.backto a:hover {
+    opacity: 0.8;
+}
+/* ------------------------------------- */
+/* footer */
+.tripbnb-footer {
+    margin-top: 3rem;
+    background: #f5f5f5;
+    color: #333;
+    padding: 40px 40px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Footer Sections */
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+/* Logo Styles */
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Heading Styles */
+.footer-heading {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Content Styles */
+.footer-content {
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Founder Info Card */
+.founder-card {
+    background: white;
+    width: 20rem;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.founder-info {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+/* Quick Links */
+.quick-links {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 8px;
+}
+
+.quick-link {
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s;
+    padding: 1px 0;
+    display: block;
+    font-size: 15px;
+}
+
+/* Social & Copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    color: #666;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.copyright {
+    color: #999;
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-link {
+    color: #fe424d;
+    text-decoration: none;
+}
+
+/* Icon Styles */
+.icon {
+    color: #fe424d;
+    margin-right: 10px;
+}
+
+.quick-link-icon {
+    margin-right: 8px;
+    font-size: 12px;
+}
+
+/* Hover Effects */
+.quick-link:hover,
+.social-icon:hover {
+    color: #fe424d;
+}
