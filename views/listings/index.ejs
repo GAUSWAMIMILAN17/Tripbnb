@@ -1,43 +1,60 @@
 <% layout("/layouts/boilerplate.ejs") %>
   <!-- <h2>All Listings</h2><br> -->
 
-  <style>
-    #filters {
-      display: flex;
-      flex-wrap: wrap;
-    }
+ <style>
+  #filters-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 
-    .filter {
-      text-align: center;
-      margin-right: 2rem;
-      margin-top: 2rem;
-      opacity: 0.7;
-      text-decoration: none;
-      color: black;
+  @media (min-width: 768px) {
+    #filters-wrapper {
+      overflow-x: visible;
+      white-space: normal;
     }
+  }
 
-    .filter:hover {
-      opacity: 1;
-      cursor: pointer;
-    }
+  #filters {
+    flex-wrap: nowrap; /* Prevent wrapping on small screens */
+  }
 
-    .filter p {
-      font-size: 0.8rem;
-    }
-    .tax-info{
-      display: none;
-    }
-    .tax-toggle{
-      border: 1px solid black;
-      border-radius: 1rem;
-      padding: 0.5rem;
-      height: 2.5rem;
-    }
+  .filter {
+    display: inline-block;
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+    text-decoration: none;
+    color: black;
+    white-space: normal;
+  }
 
-  </style>
+  .filter:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .filter p {
+    font-size: 0.8rem;
+  }
+
+  .tax-info {
+    display: none;
+  }
+
+  .tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+  }
+</style>
 
 
-  <div id="filters" class="d-flex flex-wrap gap-2">
+
+ <div id="filters-wrapper">
+  <div id="filters" class="d-flex">
     <a href="/listings" class="filter">
       <div><i class="fa-solid fa-fire"></i></div>
       <p>Trending</p>
@@ -74,15 +91,16 @@
       <div><i class="fa-solid fa-snowman"></i></div>
       <p>Arctic</p>
     </a>
-    
 
-    <div class="filter ms-auto tax-toggle">
+    <div class="filter tax-toggle ms-auto">
       <div class="form-check-reverse form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
         <label class="form-check-label" for="switchCheckDefault">Display total after taxes</label>
       </div>
     </div>
   </div>
+</div>
+
 
 
   <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 mt-3">

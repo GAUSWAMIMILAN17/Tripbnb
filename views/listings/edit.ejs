@@ -1,6 +1,6 @@
 <% layout("/layouts/boilerplate.ejs") %>
   <div class="row">
-    <div class="col-8 offset-2">
+    <div class="col-md-8 offset-md-2">
       <br>
       <h3 class="mb-3">Edit Your Listing</h3>
       <form method="POST" enctype="multipart/form-data" novalidate class="needs-validation" action="/listings/<%= listing._id %>?_method=PUT">
@@ -32,7 +32,7 @@
           <div class="invalid-feedback">Please select Category</div>
         </div>
 
-        <div class="mb-3 card col-6 listing-card show-card">
+        <div class="mb-3 card col-md-6 listing-card show-card">
           <label for="image" class="form-label">Orignal Listing Image</label>
           <img src="<%= listing.image.url %>" class="card-img-top show-image" style="height: 300px;" >
         </div>

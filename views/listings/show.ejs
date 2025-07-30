@@ -1,12 +1,12 @@
 <% layout("/layouts/boilerplate.ejs") %>
   <div class="row">
-    <div class="col-6 offset-3">
+    <div class="col-md-8 offset-md-2">
       <br>
       <h3 class="">
         <%= listing.title %>
       </h3><br>
 
-      <div class="card col-12 listing-card show-card">
+      <div class="card col-md-12 listing-card show-card">
         <img src="<%= listing.image.url %>" class="card-img-top show-image" style="height:400px" alt="listing_image">
       </div>
 
@@ -19,7 +19,7 @@
           <%= listing.description %>
         </p>
         <p class="text-muted"><%= listing.category %></p>
-        <p class="mt-3">&#8377; <%= listing.price.toLocaleString("en-IN") %> / night</p>
+        <p class="mt-3">&#8377; <%= listing.price.toLocaleString("en-IN") %></p>
         <p class="mt-3">
           <%= listing.country %>
         </p>
@@ -77,9 +77,9 @@
               <% } %>
                 <hr>
                 <p><b>All Reviews</b></p>
-                <div class="row">
+                <div class="row p-2">
                   <% for(review of listing.reviews) { %>
-                    <div class="card col-5 ms-3 mb-3">
+                    <div class="card col-sm-5 ms-sm-3 mb-3 ">
                       <div class="card-body">
                         <h5 class="card-title ms-0">@<%= review.author.username %></h5>
                         <p class="starability-result card-text" data-rating="<%= review.rating %>"></p>

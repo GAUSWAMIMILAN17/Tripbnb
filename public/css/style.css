@@ -130,11 +130,16 @@ body {
 }
 
 /* login and signup */
-.heading {
+
+/* .text {
     font-size: 2rem;
-    margin-top: 1rem !important;
-    margin-bottom: 1rem;
-}
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 10px 0 !important;
+    /* margin-top: 2rem!important;
+    margin-bottom: 3rem !important; */
+/* } */ 
 
 .backto a {
     text-decoration: none;
